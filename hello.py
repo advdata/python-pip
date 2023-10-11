@@ -1,1 +1,1 @@
-print("Hola desde mi máquina, escrito en VSC")
+print('Hola desde mi maquina')
