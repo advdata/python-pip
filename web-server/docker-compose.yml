@@ -1,9 +1,9 @@
 services:
-  web-server:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - .:/app
+  web-server: # Es el nombre que ekegimos para el servicio
+    build: # Construye el servicio
+      context: . # En el directorio actual
+      dockerfile: Dockerfile # Utilizando el archivo que creamos 
+    volumes: # Es la etiqueta para enlazar archivos y contenedor (de manera que cuando hagamos cambios en los scripts, el contenedor los reconozca y actualice inmediatamente)
+      - .:/app # Es la instrucción para enlazar todos los archivos directamente con lo que hay en el contenedor 
     ports:
-     - '80:80'
+     - '80:80' # Es la instrucción para enlazar el puerto 80 con el puerto 80 del contendor

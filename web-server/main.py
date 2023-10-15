@@ -5,9 +5,9 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
 # Por ahora comento la siguiente línea:
-#app = FastAPI()
+app = FastAPI()
 
-@app.get('/')
+@app.get('/') # Esta sintaxis se conoce como un "decorador"
 def get_list():
     return [1,2,3,]
 
